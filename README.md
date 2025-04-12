@@ -1,6 +1,6 @@
-# Tip Calculator App
+# Interactive Rating Component
 
-This is a solution to the [Tip Calculator App Challenge](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX) on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Interactive Rating Component Challenge](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI) on Frontend Mentor. It's a great project to practice DOM manipulation and conditional rendering with JavaScript.
 
 ## 🚀 Overview
 
@@ -8,11 +8,9 @@ This is a solution to the [Tip Calculator App Challenge](https://www.frontendmen
 
 Users should be able to:
 
-- Enter the bill amount
-- Select a tip percentage
-- Enter the number of people sharing the bill
-- See the tip amount and total per person
-- Reset the calculator
+- Select a rating between 1 to 5
+- Submit the selected rating
+- See a thank you message with the selected rating
 
 ### Links
 
@@ -21,24 +19,25 @@ Users should be able to:
 
 ## 🔧 Built With
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox & Grid
-- Mobile-first workflow
+- Semantic HTML5
+- CSS Flexbox
 - JavaScript (for interactivity)
+- Mobile-first workflow
 
 ## ✨ What I Learned
 
-While working on this project, I practiced DOM manipulation, event handling, and input validation using JavaScript. I also improved my understanding of responsive design and layout structuring using CSS Grid and Flexbox.
+This challenge helped me understand conditional rendering in JavaScript by toggling between the rating state and the thank you state. I also focused on improving my CSS layout skills.
 
 ## 🧠 Continued Development
 
-I plan to improve accessibility by adding keyboard navigation and ARIA labels. I also want to enhance the error handling for invalid input.
+In future iterations, I plan to:
+- Add accessibility improvements
+- Store ratings in local storage for analytics
 
 ## 📚 Useful Resources
 
-- [MDN Web Docs](https://developer.mozilla.org/)
-- [Frontend Mentor Slack Community](https://www.frontendmentor.io/slack)
+- [JavaScript Event Listeners](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- [CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## 👨‍💻 Author
 
@@ -47,7 +46,5 @@ I plan to improve accessibility by adding keyboard navigation and ARIA labels. I
 
 ## 🎉 Acknowledgments
 
-- Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)
-- Thanks to all who give feedback!
+- Thanks to [Frontend Mentor](https://www.frontendmentor.io) for the challenge and learning opportunity!
 
----
