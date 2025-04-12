@@ -1,0 +1,174 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+.overpass-400 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.overpass-700 {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/*variables*/
+:root {
+  --orange-500: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+/*body*/
+body {
+  background-color: var(--very-dark-blue);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 412px;
+  margin: 1.5rem;
+}
+
+.rating-state,
+.thank-you-state {
+  background: radial-gradient(
+    circle at top,
+    var(--dark-blue),
+    hsl(215, 27%, 12%)
+  );
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+/* Star icon container */
+.star-container {
+  width: 48px;
+  height: 48px;
+  background-color: hsl(213, 19%, 22%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.star-container img {
+  width: 17px;
+  height: 16px;
+}
+
+/* Typography */
+h1,
+h2 {
+  color: var(--white);
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+p {
+  color: var(--light-grey);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+}
+
+/* Rating buttons */
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rating-buttons button {
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(213, 19%, 22%);
+  color: var(--medium-grey);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rating-buttons button:hover {
+  background-color: var(--orange-500);
+  color: var(--white);
+}
+
+.rating-buttons button.active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--orange-500);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--white);
+}
+
+/* Thank you state */
+.thank-you-state {
+  text-align: center;
+  display: none;
+}
+
+.thank-you-state img {
+  margin-bottom: 2rem;
+}
+
+.selection-message {
+  background-color: hsl(213, 19%, 22%);
+  color: var(--orange-500);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: var(--light-grey);
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: var(--orange-500);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--white);
+}
